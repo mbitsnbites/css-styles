@@ -4,10 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
 <title>CSS Styles</title>
-<link rel="stylesheet" type="text/css" href="wooden.css">
+<link id="pagestyle" rel="stylesheet" type="text/css" href="plain-light.css">
+<script>
+function setStyle(style) {
+  document.getElementById("pagestyle").setAttribute("href", style);
+}
+function init() {
+  document.getElementById("style0").onclick = function () { setStyle(""); return false; };
+  document.getElementById("style1").onclick = function () { setStyle("plain-light.css"); return false; };
+  document.getElementById("style2").onclick = function () { setStyle("plain-dark.css"); return false; };
+  document.getElementById("style3").onclick = function () { setStyle("wooden.css"); return false; };
+}
+</script>
 </head>
-<body>
+<body onload="init()">
 <h1>CSS Styles</h1>
+<p>
+Select a style:
+</p>
+<form>
+  <input id="style1" type="submit" value="plain-light.css"><br>
+  <input id="style2" type="submit" value="plain-dark.css"><br>
+  <input id="style3" type="submit" value="wooden.css"><br>
+  <input id="style0" type="submit" value="None"><br>
+</form>
+
 <h2>Paragraphs</h2>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
