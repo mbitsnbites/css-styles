@@ -81,23 +81,23 @@ figure {
   margin-bottom: 1em;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
-.float-left::after, .float-right::after {
+.csss-float-left::after, .csss-float-right::after {
   content: "";
   clear: both;
   display: table;
 }
-.float-left img, .float-left figure {
+.csss-float-left img, .csss-float-left figure {
   float: left;
   margin-right: 2em;
 }
-.float-right img, .float-right figure {
+.csss-float-right img, .csss-float-right figure {
   float: right;
   margin-left: 2em;
 }
-.float-left img, .float-right img {
+.csss-float-left img, .csss-float-right img {
   margin-bottom: 1em;
 }
-.float-left figure img, .float-right figure img {
+.csss-float-left figure img, .csss-float-right figure img {
   /* Don't float an image inside a floating figure. */
   float: none;
   margin-left: 0;
