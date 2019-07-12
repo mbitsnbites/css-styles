@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html {
+  background: #050505 url("black_twill.png") fixed;
+  padding: 0 1em 1em 1em;
+}
+body {
+  background: rgba(255,255,252,0.99);
+  color: #000;
+  font-family: sans-serif;
+  min-width: 300px;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em 1em;
+  box-shadow: 0 0 20px 0px #ddd;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Quicksand', sans-serif;
+  color: #444;
+}
+h2 {
+  border-bottom: 1px solid #ddd;
+}
+h3,h5 {
+  font-style: italic;
+}
+p {
+  padding-left: 0.5em;
+}
+code {
+  color: #660;
+  background: #f8f8f8;
+  display: block;
+  margin: 0.4em 1.5em;
+  padding: 0.6em 1.5em;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+a {
+  color: #33f;
+}
+a:hover {
+  color: #77f;
+}
+a:visted {
+  color: #66f;
+}
+hr {
+  border: 0;
+  height: 1px;
+  box-shadow: 0 0px 2px 0px #ccc;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+table {
+  border-collapse: collapse;
+  border: 1px solid #555;
+  caption-side: bottom;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  background: #f8f8f8;
+}
+table th, table td {
+  border: 1px solid #555;
+  padding: 0.1em 0.5em;
+}
+table th {
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  background: #666;
+}
+table caption, figcaption {
+  text-align: left;
+  font-style: italic;
+  margin-top: 0.5em;
+}
+figure {
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  margin: 0;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.csss-float-left::after, .csss-float-right::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.csss-float-left img, .csss-float-left figure {
+  float: left;
+  margin-right: 2em;
+}
+.csss-float-right img, .csss-float-right figure {
+  float: right;
+  margin-left: 2em;
+}
+.csss-float-left img, .csss-float-right img {
+  margin-bottom: 1em;
+}
+.csss-float-left figure img, .csss-float-right figure img {
+  /* Don't float an image inside a floating figure. */
+  float: none;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
