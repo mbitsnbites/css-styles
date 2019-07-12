@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 html {
-  background: #050505 url("black_twill.png") fixed;
+  background: #050505 url("gray_twill.png") fixed;
   padding: 0 1em 1em 1em;
 }
 body {
@@ -13,7 +13,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0.5em 1em;
-  box-shadow: 0 0 20px 0px #ddd;
+  box-shadow: 0 0 20px 0px rgb(71, 71, 71);
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Quicksand', sans-serif;
