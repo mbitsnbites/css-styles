@@ -4,17 +4,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
 <title>CSS Styles</title>
-<link id="pagestyle" rel="stylesheet" type="text/css" href="plain-light.css">
+<link id="pagestyle" rel="stylesheet" type="text/css" href="light-on-gray.css">
 <script>
 function setStyle(style) {
   document.getElementById("pagestyle").setAttribute("href", style);
 }
 function init() {
   document.getElementById("style0").onclick = function () { setStyle(""); return false; };
-  document.getElementById("style1").onclick = function () { setStyle("plain-light.css"); return false; };
-  document.getElementById("style2").onclick = function () { setStyle("plain-dark.css"); return false; };
-  document.getElementById("style3").onclick = function () { setStyle("wooden.css"); return false; };
-  document.getElementById("style4").onclick = function () { setStyle("light-on-gray.css"); return false; };
+  document.getElementById("style1").onclick = function () { setStyle("light-on-gray.css"); return false; };
+  document.getElementById("style2").onclick = function () { setStyle("plain-light.css"); return false; };
+  document.getElementById("style3").onclick = function () { setStyle("plain-dark.css"); return false; };
+  document.getElementById("style4").onclick = function () { setStyle("wooden.css"); return false; };
 }
 </script>
 </head>
@@ -24,10 +24,10 @@ function init() {
 Select a style:
 </p>
 <form>
-  <input id="style1" type="submit" value="plain-light.css"><br>
-  <input id="style2" type="submit" value="plain-dark.css"><br>
-  <input id="style3" type="submit" value="wooden.css"><br>
-  <input id="style4" type="submit" value="light-on-gray.css"><br>
+  <input id="style1" type="submit" value="light-on-gray.css"><br>
+  <input id="style2" type="submit" value="plain-light.css"><br>
+  <input id="style3" type="submit" value="plain-dark.css"><br>
+  <input id="style4" type="submit" value="wooden.css"><br>
   <input id="style0" type="submit" value="None"><br>
 </form>
 
